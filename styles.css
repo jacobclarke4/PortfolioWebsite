@@ -1,0 +1,245 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* #f6ef6b */
+    /*background-color: #1a1f2b;*/
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+}
+
+.section-1 {
+    height: 120vh;
+}
+
+.nav-bar {
+    padding-top: 50px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    display: flex;
+    z-index:1000;
+    justify-content: center;
+}
+
+.nav-element {
+    color:white;
+    font-size: .5em;
+    text-decoration:none;
+    margin:0px 12px;
+    opacity: .7;
+    transition: all .15s ease-in;
+}
+.nav-element:hover {
+    opacity: 1;
+    color: white;
+}
+.nav-element.active {
+    opacity: 1;
+    color: white;
+}
+
+.nav-title {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20%;
+    z-index:102;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title-bg {
+    display: flex;
+    background: linear-gradient(165deg,#ffe669 20%, #fec536 30%, rgba(0,0,0,0) 80%);
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    animation: floatAnimation 20s infinite;
+}
+.name-title {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Vollkorn', serif;
+
+}
+.name-title h1 {
+     font-size: 1em;
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+@keyframes cloudFloatAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+.name-title:hover {
+    color: white;
+}
+
+#layer-0 {
+    position: fixed;
+    background-image: url('background.svg');
+    z-index: 0;
+    width: 100%;
+    height: 95%;
+    top: 0;
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    will-change: transform;
+}
+#layer-1 {
+    position: fixed;
+    background-image: url('mountains.svg');
+    z-index: 5;
+    width: 100%;
+    height: 110%;
+    top: 0;
+    background-position: 50% 100%;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    will-change: transform;
+}
+#layer-2 {
+    position: fixed;
+    background-image: url('forest1.svg');
+    z-index: 6;
+    width: 100%;
+    height: 110%;
+    top: 0;
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    will-change: transform;
+}
+#layer-3 {
+    position: fixed;
+    background-image: url('forest2.svg');
+    z-index: 7;
+    width: 100%;
+    height: 110%;
+    top: 0;
+    background-position: 50% 100%;
+    background-size: cover;
+    overflow: visible;
+    background-repeat: no-repeat;
+    will-change: transform;
+}
+#layer-4 {
+    position: fixed;
+    background-image: url('forest3.svg');
+    z-index: 8;
+    width: 100%;
+    height: 110%;
+    top: 0;
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    will-change: transform;
+}
+#layer-5 {
+    position: absolute;
+    background-image: url('foreground.svg');
+    z-index: 100;
+    width: 100%;
+    height: 120%;
+    top: 0;
+    background-position: 50% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    will-change: transform;
+}
+#cloud-1 {
+    position: fixed;
+    background-image: url('cloud1.svg');
+    z-index: 4;
+    width: 100%;
+    height: 110%;
+    top: 0;
+    background-position: 50% 100%;
+    background-size:cover;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    will-change: transform;
+    animation: cloudFloatAnimation 30s infinite;
+}
+.section-2 {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(45deg, #5b3c68, #9c4881 );
+    z-index:200;
+    font-size: 40px;
+}
+.accordion {
+    padding: 5% 10%;
+}
+.accordion-item {
+    border: none;
+}
+
+.accordion-button {
+    font-size: 1em;
+    background: linear-gradient(to right, #5b3c68 75%, #9c4881 90% );
+    border: none;
+    color: white;
+    font-family: 'lato', serif;
+}
+.accordion-button:not(.collapsed) {
+    color: white !important;
+}
+.accordion-body {
+    font-size: .5em;
+}
+
+.card-grid {
+    display:flex;
+    justify-content:center;
+    position: relative;
+    align-items: center;
+    padding: 5% 10%;
+    font-size: 40px;
+}
+.card {
+    margin: 0px 15px;
+    width: 40%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.card-img-top {
+    padding: 20px;
+}
+.card-text {
+    font-family: 'Lato', sans-serif;
+    font-size: .5em;
+}
+
+
+
+
